@@ -120,7 +120,7 @@
 "Full Screen Mirroring" = "Koko Näytön Peilaus";
 "General" = "Yleiset";
 "Get Help" = "Ohje";
-"Get RootHide Package" = "Hae RootHide-paketti";
+"Get roothide Package" = "Hae roothide-paketti";
 "Height" = "Korkeus";
 "Incomplete Installation" = "Keskeneräinen asennus";
 "Incomplete Installations" = "Keskeneräiset asennukset";
@@ -212,7 +212,7 @@
 "Resolution" = "Resoluutio";
 "Resources" = "Resurssit";
 "Resume" = "Jatka";
-"RootHide Package Required" = "RootHide-paketti vaaditaan";
+"roothide Package Required" = "roothide-paketti vaaditaan";
 "Save" = "Tallenna";
 "Save a ZIP file containing logs and crash reports." = "Tallenna lokit ja kaatumisraportit sisältävä ZIP-tiedosto.";
 "Save Diagnostics to Files" = "Tallenna diagnostiikka Tiedostot-appiin";
@@ -271,7 +271,7 @@
 "These options affect iPadOS only while Virtual Mac is frontmost and a Virtual Mac is running." = "Nämä valinnat vaikuttavat iPadOS:ään vain, kun Virtuaalinen Mac on etualalla ja virtuaalinen Mac on käynnissä.";
 "This iPad is incompatible with Virtual Mac" = "Tämä iPad ei ole yhteensopiva Virtual Macin kanssa";
 "This iPhone is incompatible with Virtual Mac" = "Tämä iPhone ei ole yhteensopiva Virtual Macin kanssa";
-"This is the standard Virtual Mac package running on a RootHide jailbreak. Install the official RootHide package for private storage and full compatibility." = "Tämä on Virtual Macin vakioversio, joka toimii RootHide-jailbreakissa. Asenna virallinen RootHide-paketti yksityistä tallennustilaa ja täydellistä yhteensopivuutta varten.";
+"This is the standard Virtual Mac package running on a Dopamine-roothide jailbreak. Install the official roothide package for private storage and full compatibility." = "Tämä on Virtual Macin vakioversio, joka toimii Dopamine-roothide-jailbreakissa. Asenna virallinen roothide-paketti yksityistä tallennustilaa ja täydellistä yhteensopivuutta varten.";
 "This restores all Virtual Mac settings to their defaults. Virtual Macs, restore images, and installation files won’t be removed." = "Tämä palauttaa kaikki Virtual Mac -asetukset oletusarvoihin. Virtuaalisia Maceja, palautuskuvia ja asennustiedostoja ei poisteta.";
 "this Virtual Mac" = "tämä virtuaalinen Mac";
 "To enable OpenGL acceleration, shut down this Virtual Mac, then in its options, enable OpenGL Acceleration." = "Ota OpenGL-kiihdytys käyttöön sammuttamalla tämä Virtual Mac ja ottamalla toiminto käyttöön sen valinnoissa.";

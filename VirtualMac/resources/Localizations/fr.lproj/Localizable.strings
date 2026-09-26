@@ -120,7 +120,7 @@
 "Full Screen Mirroring" = "Mise en Miroir Plein Écran";
 "General" = "Général";
 "Get Help" = "Obtenir de l’aide";
-"Get RootHide Package" = "Obtenir le paquet RootHide";
+"Get roothide Package" = "Obtenir le paquet roothide";
 "Height" = "Hauteur";
 "Incomplete Installation" = "Installation incomplète";
 "Incomplete Installations" = "Installations incomplètes";
@@ -212,7 +212,7 @@
 "Resolution" = "Résolution";
 "Resources" = "Ressources";
 "Resume" = "Reprendre";
-"RootHide Package Required" = "Paquet RootHide requis";
+"roothide Package Required" = "Paquet roothide requis";
 "Save" = "Enregistrer";
 "Save a ZIP file containing logs and crash reports." = "Enregistrez un fichier ZIP contenant les journaux et les rapports de plantage.";
 "Save Diagnostics to Files" = "Enregistrer les diagnostics dans Fichiers";
@@ -271,7 +271,7 @@
 "These options affect iPadOS only while Virtual Mac is frontmost and a Virtual Mac is running." = "Ces options affectent iPadOS uniquement lorsque Mac virtuel est au premier plan et qu’un Mac virtuel est en cours d’exécution.";
 "This iPad is incompatible with Virtual Mac" = "Cet iPad n’est pas compatible avec Virtual Mac";
 "This iPhone is incompatible with Virtual Mac" = "Cet iPhone n’est pas compatible avec Virtual Mac";
-"This is the standard Virtual Mac package running on a RootHide jailbreak. Install the official RootHide package for private storage and full compatibility." = "Ceci est le paquet standard de Virtual Mac s’exécutant sur un jailbreak RootHide. Installez le paquet RootHide officiel pour un stockage privé et une compatibilité complète.";
+"This is the standard Virtual Mac package running on a Dopamine-roothide jailbreak. Install the official roothide package for private storage and full compatibility." = "Ceci est le paquet standard de Virtual Mac s’exécutant sur un jailbreak Dopamine-roothide. Installez le paquet roothide officiel pour un stockage privé et une compatibilité complète.";
 "This restores all Virtual Mac settings to their defaults. Virtual Macs, restore images, and installation files won’t be removed." = "Tous les réglages de Virtual Mac seront rétablis à leurs valeurs par défaut. Les Mac virtuels, images de restauration et fichiers d’installation ne seront pas supprimés.";
 "this Virtual Mac" = "ce Mac virtuel";
 "To enable OpenGL acceleration, shut down this Virtual Mac, then in its options, enable OpenGL Acceleration." = "Pour activer l’accélération OpenGL, éteignez ce Virtual Mac, puis activez-la dans ses options.";

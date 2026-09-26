@@ -120,7 +120,7 @@
 "Full Screen Mirroring" = "전체 화면 미러링";
 "General" = "일반";
 "Get Help" = "도움말 보기";
-"Get RootHide Package" = "RootHide 패키지 받기";
+"Get roothide Package" = "roothide 패키지 받기";
 "Height" = "높이";
 "Incomplete Installation" = "완료되지 않은 설치";
 "Incomplete Installations" = "완료되지 않은 설치";
@@ -212,7 +212,7 @@
 "Resolution" = "해상도";
 "Resources" = "리소스";
 "Resume" = "재개";
-"RootHide Package Required" = "RootHide 패키지 필요";
+"roothide Package Required" = "roothide 패키지 필요";
 "Save" = "저장";
 "Save a ZIP file containing logs and crash reports." = "로그와 충돌 보고서가 포함된 ZIP 파일을 저장합니다.";
 "Save Diagnostics to Files" = "진단 정보를 파일에 저장";
@@ -271,7 +271,7 @@
 "These options affect iPadOS only while Virtual Mac is frontmost and a Virtual Mac is running." = "이 옵션은 가상 Mac이 전면에서 실행 중일 때만 iPadOS에 영향을 줍니다.";
 "This iPad is incompatible with Virtual Mac" = "이 iPad는 Virtual Mac과 호환되지 않습니다";
 "This iPhone is incompatible with Virtual Mac" = "이 iPhone은 Virtual Mac과 호환되지 않습니다";
-"This is the standard Virtual Mac package running on a RootHide jailbreak. Install the official RootHide package for private storage and full compatibility." = "이것은 RootHide 탈옥에서 실행 중인 표준 Virtual Mac 패키지입니다. 개인 저장 공간과 완전한 호환성을 위해 공식 RootHide 패키지를 설치하세요.";
+"This is the standard Virtual Mac package running on a Dopamine-roothide jailbreak. Install the official roothide package for private storage and full compatibility." = "이것은 Dopamine-roothide 탈옥에서 실행 중인 표준 Virtual Mac 패키지입니다. 개인 저장 공간과 완전한 호환성을 위해 공식 roothide 패키지를 설치하세요.";
 "This restores all Virtual Mac settings to their defaults. Virtual Macs, restore images, and installation files won’t be removed." = "모든 가상 Mac 설정을 기본값으로 복원합니다. 가상 Mac, 복원 이미지 및 설치 파일은 삭제되지 않습니다.";
 "this Virtual Mac" = "이 가상 Mac";
 "To enable OpenGL acceleration, shut down this Virtual Mac, then in its options, enable OpenGL Acceleration." = "OpenGL 가속을 켜려면 이 Virtual Mac을 종료한 다음 옵션에서 OpenGL 가속을 켜십시오.";

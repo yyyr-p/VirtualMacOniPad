@@ -120,7 +120,7 @@
 "Full Screen Mirroring" = "การสะท้อนภาพเต็มจอ";
 "General" = "ทั่วไป";
 "Get Help" = "ขอความช่วยเหลือ";
-"Get RootHide Package" = "รับแพ็กเกจ RootHide";
+"Get roothide Package" = "รับแพ็กเกจ roothide";
 "Height" = "ความสูง";
 "Incomplete Installation" = "การติดตั้งไม่เสร็จ";
 "Incomplete Installations" = "การติดตั้งที่ไม่เสร็จ";
@@ -212,7 +212,7 @@
 "Resolution" = "ความละเอียด";
 "Resources" = "ทรัพยากร";
 "Resume" = "ทำงานต่อ";
-"RootHide Package Required" = "ต้องการแพ็กเกจ RootHide";
+"roothide Package Required" = "ต้องการแพ็กเกจ roothide";
 "Save" = "บันทึก";
 "Save a ZIP file containing logs and crash reports." = "บันทึกไฟล์ ZIP ที่มีบันทึกและรายงานข้อขัดข้อง";
 "Save Diagnostics to Files" = "บันทึกข้อมูลวินิจฉัยไปยังไฟล์";
@@ -271,7 +271,7 @@
 "These options affect iPadOS only while Virtual Mac is frontmost and a Virtual Mac is running." = "ตัวเลือกเหล่านี้มีผลกับ iPadOS เฉพาะเมื่อ Mac เสมือน อยู่ด้านหน้าและ Mac เสมือนกำลังทำงาน";
 "This iPad is incompatible with Virtual Mac" = "iPad เครื่องนี้ไม่รองรับ Virtual Mac";
 "This iPhone is incompatible with Virtual Mac" = "iPhone เครื่องนี้ไม่รองรับ Virtual Mac";
-"This is the standard Virtual Mac package running on a RootHide jailbreak. Install the official RootHide package for private storage and full compatibility." = "นี่คือแพ็กเกจ Virtual Mac มาตรฐานที่ทำงานบนเจลเบรก RootHide ติดตั้งแพ็กเกจ RootHide อย่างเป็นทางการเพื่อพื้นที่จัดเก็บส่วนตัวและความเข้ากันได้สมบูรณ์";
+"This is the standard Virtual Mac package running on a Dopamine-roothide jailbreak. Install the official roothide package for private storage and full compatibility." = "นี่คือแพ็กเกจ Virtual Mac มาตรฐานที่ทำงานบนเจลเบรก Dopamine-roothide ติดตั้งแพ็กเกจ roothide อย่างเป็นทางการเพื่อพื้นที่จัดเก็บส่วนตัวและความเข้ากันได้สมบูรณ์";
 "This restores all Virtual Mac settings to their defaults. Virtual Macs, restore images, and installation files won’t be removed." = "การดำเนินการนี้จะคืนการตั้งค่า Virtual Mac ทั้งหมดเป็นค่าเริ่มต้น โดยจะไม่ลบ Virtual Mac อิมเมจกู้คืน หรือไฟล์ติดตั้ง";
 "this Virtual Mac" = "Virtual Mac เครื่องนี้";
 "To enable OpenGL acceleration, shut down this Virtual Mac, then in its options, enable OpenGL Acceleration." = "หากต้องการเปิดการเร่งความเร็ว OpenGL ให้ปิด Virtual Mac เครื่องนี้ แล้วเปิดการเร่งความเร็ว OpenGL ในตัวเลือก";

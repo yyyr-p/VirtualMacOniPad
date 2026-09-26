@@ -120,7 +120,7 @@
 "Full Screen Mirroring" = "שיקוף במסך מלא";
 "General" = "כללי";
 "Get Help" = "קבלת עזרה";
-"Get RootHide Package" = "קבל את חבילת RootHide";
+"Get roothide Package" = "קבל את חבילת roothide";
 "Height" = "גובה";
 "Incomplete Installation" = "התקנה שלא הושלמה";
 "Incomplete Installations" = "התקנות שלא הושלמו";
@@ -212,7 +212,7 @@
 "Resolution" = "רזולוציה";
 "Resources" = "משאבים";
 "Resume" = "המשך";
-"RootHide Package Required" = "נדרשת חבילת RootHide";
+"roothide Package Required" = "נדרשת חבילת roothide";
 "Save" = "שמירה";
 "Save a ZIP file containing logs and crash reports." = "שמרו קובץ ZIP המכיל יומנים ודוחות קריסה.";
 "Save Diagnostics to Files" = "שמירת נתוני האבחון ב״קבצים״";
@@ -271,7 +271,7 @@
 "These options affect iPadOS only while Virtual Mac is frontmost and a Virtual Mac is running." = "אפשרויות אלה משפיעות על iPadOS רק כאשר Mac וירטואלי בחזית ומופעל Mac וירטואלי.";
 "This iPad is incompatible with Virtual Mac" = "ה-iPad הזה אינו תואם ל-Virtual Mac";
 "This iPhone is incompatible with Virtual Mac" = "ה-iPhone הזה אינו תואם ל-Virtual Mac";
-"This is the standard Virtual Mac package running on a RootHide jailbreak. Install the official RootHide package for private storage and full compatibility." = "זהו חבילת Virtual Mac הרגילה שפועלת על פריצת RootHide. התקן את חבילת RootHide הרשמית לאחסון פרטי ותאימות מלא.";
+"This is the standard Virtual Mac package running on a Dopamine-roothide jailbreak. Install the official roothide package for private storage and full compatibility." = "זהו חבילת Virtual Mac הרגילה שפועלת על פריצת Dopamine-roothide. התקן את חבילת roothide הרשמית לאחסון פרטי ותאימות מלא.";
 "This restores all Virtual Mac settings to their defaults. Virtual Macs, restore images, and installation files won’t be removed." = "פעולה זו מאפסת את כל הגדרות Mac וירטואלי לברירות המחדל. מחשבי Mac וירטואליים, תמונות שחזור וקובצי התקנה לא יוסרו.";
 "this Virtual Mac" = "Mac וירטואלי זה";
 "To enable OpenGL acceleration, shut down this Virtual Mac, then in its options, enable OpenGL Acceleration." = "כדי להפעיל האצת OpenGL, יש לכבות את ה‑Virtual Mac הזה ולהפעיל אותה באפשרויות שלו.";

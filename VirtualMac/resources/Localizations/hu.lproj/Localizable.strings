@@ -120,7 +120,7 @@
 "Full Screen Mirroring" = "Teljes Képernyős Tükrözés";
 "General" = "Általános";
 "Get Help" = "Súgó";
-"Get RootHide Package" = "RootHide-csomag letöltése";
+"Get roothide Package" = "roothide-csomag letöltése";
 "Height" = "Magasság";
 "Incomplete Installation" = "Hiányos telepítés";
 "Incomplete Installations" = "Hiányos telepítések";
@@ -212,7 +212,7 @@
 "Resolution" = "Felbontás";
 "Resources" = "Erőforrások";
 "Resume" = "Folytatás";
-"RootHide Package Required" = "RootHide-csomag szükséges";
+"roothide Package Required" = "roothide-csomag szükséges";
 "Save" = "Mentés";
 "Save a ZIP file containing logs and crash reports." = "Mentsen egy naplókat és összeomlási jelentéseket tartalmazó ZIP-fájlt.";
 "Save Diagnostics to Files" = "Diagnosztika mentése a Fájlokba";
@@ -271,7 +271,7 @@
 "These options affect iPadOS only while Virtual Mac is frontmost and a Virtual Mac is running." = "Ezek a beállítások csak akkor befolyásolják az iPadOS-t, amikor a Virtuális Mac van előtérben, és fut egy virtuális Mac.";
 "This iPad is incompatible with Virtual Mac" = "Ez az iPad nem kompatibilis a Virtual Mac alkalmazással";
 "This iPhone is incompatible with Virtual Mac" = "Ez az iPhone nem kompatibilis a Virtual Mac alkalmazással";
-"This is the standard Virtual Mac package running on a RootHide jailbreak. Install the official RootHide package for private storage and full compatibility." = "Ez a standard Virtual Mac-csomag, amely RootHide-jailbreaken fut. Telepítse a hivatalos RootHide-csomagot privát tárhelyhez és teljes kompatibilitáshoz.";
+"This is the standard Virtual Mac package running on a Dopamine-roothide jailbreak. Install the official roothide package for private storage and full compatibility." = "Ez a standard Virtual Mac-csomag, amely Dopamine-roothide-jailbreaken fut. Telepítse a hivatalos roothide-csomagot privát tárhelyhez és teljes kompatibilitáshoz.";
 "This restores all Virtual Mac settings to their defaults. Virtual Macs, restore images, and installation files won’t be removed." = "Ez minden Virtual Mac-beállítást alapértékre állít. A virtuális Macek, a helyreállítási lemezképek és a telepítési fájlok nem törlődnek.";
 "this Virtual Mac" = "ez a virtuális Mac";
 "To enable OpenGL acceleration, shut down this Virtual Mac, then in its options, enable OpenGL Acceleration." = "Az OpenGL-gyorsítás bekapcsolásához állítsa le ezt a Virtual Macet, majd kapcsolja be a beállításaiban.";

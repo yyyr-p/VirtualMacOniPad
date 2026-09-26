@@ -120,7 +120,7 @@
 "Full Screen Mirroring" = "Phản Chiếu Toàn Màn Hình";
 "General" = "Cài đặt chung";
 "Get Help" = "Nhận trợ giúp";
-"Get RootHide Package" = "Nhận gói RootHide";
+"Get roothide Package" = "Nhận gói roothide";
 "Height" = "Chiều cao";
 "Incomplete Installation" = "Bản cài đặt chưa hoàn tất";
 "Incomplete Installations" = "Các bản cài đặt chưa hoàn tất";
@@ -212,7 +212,7 @@
 "Resolution" = "Độ phân giải";
 "Resources" = "Tài nguyên";
 "Resume" = "Tiếp tục";
-"RootHide Package Required" = "Yêu cầu gói RootHide";
+"roothide Package Required" = "Yêu cầu gói roothide";
 "Save" = "Lưu";
 "Save a ZIP file containing logs and crash reports." = "Lưu tệp ZIP chứa nhật ký và báo cáo sự cố.";
 "Save Diagnostics to Files" = "Lưu chẩn đoán vào Tệp";
@@ -271,7 +271,7 @@
 "These options affect iPadOS only while Virtual Mac is frontmost and a Virtual Mac is running." = "Các tùy chọn này chỉ ảnh hưởng đến iPadOS khi Máy Mac ảo ở phía trước và Máy Mac ảo đang chạy.";
 "This iPad is incompatible with Virtual Mac" = "iPad này không tương thích với Virtual Mac";
 "This iPhone is incompatible with Virtual Mac" = "iPhone này không tương thích với Virtual Mac";
-"This is the standard Virtual Mac package running on a RootHide jailbreak. Install the official RootHide package for private storage and full compatibility." = "Đây là gói Virtual Mac tiêu chuẩn đang chạy trên jailbreak RootHide. Cài đặt gói RootHide chính thức để có vùng lưu trữ riêng và khả năng tương thích đầy đủ.";
+"This is the standard Virtual Mac package running on a Dopamine-roothide jailbreak. Install the official roothide package for private storage and full compatibility." = "Đây là gói Virtual Mac tiêu chuẩn đang chạy trên jailbreak Dopamine-roothide. Cài đặt gói roothide chính thức để có vùng lưu trữ riêng và khả năng tương thích đầy đủ.";
 "This restores all Virtual Mac settings to their defaults. Virtual Macs, restore images, and installation files won’t be removed." = "Thao tác này đặt lại tất cả cài đặt Virtual Mac về mặc định. Máy Mac ảo, ảnh khôi phục và tệp cài đặt sẽ không bị xóa.";
 "this Virtual Mac" = "máy Mac ảo này";
 "To enable OpenGL acceleration, shut down this Virtual Mac, then in its options, enable OpenGL Acceleration." = "Để bật tăng tốc OpenGL, hãy tắt Virtual Mac này rồi bật Tăng tốc OpenGL trong tùy chọn của máy.";

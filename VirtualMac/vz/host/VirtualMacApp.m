@@ -351,10 +351,10 @@ static void VZContinueAfterRootHideInformation(
         gRootHideInformationVisible = YES;
         UIAlertController *alert = [UIAlertController
             alertControllerWithTitle:
-                VZL(@"RootHide Package Required")
-            message:VZL(@"This is the standard Virtual Mac package running on a RootHide jailbreak. Install the official RootHide package for private storage and full compatibility.")
+                VZL(@"roothide Package Required")
+            message:VZL(@"This is the standard Virtual Mac package running on a Dopamine-roothide jailbreak. Install the official roothide package for private storage and full compatibility.")
             preferredStyle:UIAlertControllerStyleAlert];
-        [alert addAction:[UIAlertAction actionWithTitle:VZL(@"Get RootHide Package")
+        [alert addAction:[UIAlertAction actionWithTitle:VZL(@"Get roothide Package")
             style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
             (void)action;
             VZOpenSupportURL(@"https://github.com/nfzerox/VirtualMacOniPad");

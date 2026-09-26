@@ -120,7 +120,7 @@
 "Full Screen Mirroring" = "Повноекранне Дзеркалення";
 "General" = "Загальні";
 "Get Help" = "Довідка";
-"Get RootHide Package" = "Отримати пакет RootHide";
+"Get roothide Package" = "Отримати пакет roothide";
 "Height" = "Висота";
 "Incomplete Installation" = "Незавершена інсталяція";
 "Incomplete Installations" = "Незавершені інсталяції";
@@ -212,7 +212,7 @@
 "Resolution" = "Разрешение";
 "Resources" = "Ресурси";
 "Resume" = "Возобновить";
-"RootHide Package Required" = "Потрібен пакет RootHide";
+"roothide Package Required" = "Потрібен пакет roothide";
 "Save" = "Зберегти";
 "Save a ZIP file containing logs and crash reports." = "Збережіть ZIP-файл із журналами та звітами про збої.";
 "Save Diagnostics to Files" = "Зберегти діагностику у «Файли»";
@@ -271,7 +271,7 @@
 "These options affect iPadOS only while Virtual Mac is frontmost and a Virtual Mac is running." = "Ці параметри впливають на iPadOS лише тоді, коли Віртуальний Mac на передньому плані й запущено віртуальний Mac.";
 "This iPad is incompatible with Virtual Mac" = "Цей iPad несумісний із Virtual Mac";
 "This iPhone is incompatible with Virtual Mac" = "Цей iPhone несумісний із Virtual Mac";
-"This is the standard Virtual Mac package running on a RootHide jailbreak. Install the official RootHide package for private storage and full compatibility." = "Це стандартний пакет Virtual Mac, що працює на джейлбрейку RootHide. Встановіть офіційний пакет RootHide для приватного сховища та повної сумісності.";
+"This is the standard Virtual Mac package running on a Dopamine-roothide jailbreak. Install the official roothide package for private storage and full compatibility." = "Це стандартний пакет Virtual Mac, що працює на джейлбрейку Dopamine-roothide. Встановіть офіційний пакет roothide для приватного сховища та повної сумісності.";
 "This restores all Virtual Mac settings to their defaults. Virtual Macs, restore images, and installation files won’t be removed." = "Усі параметри програми буде скинуто. Віртуальні Mac, образи відновлення та інсталяційні файли не видалятимуться.";
 "this Virtual Mac" = "цей віртуальний Mac";
 "To enable OpenGL acceleration, shut down this Virtual Mac, then in its options, enable OpenGL Acceleration." = "Щоб увімкнути прискорення OpenGL, вимкніть цей Virtual Mac, а потім увімкніть його в параметрах.";

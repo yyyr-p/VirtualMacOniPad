@@ -120,7 +120,7 @@
 "Full Screen Mirroring" = "Fuldskærms Spejling";
 "General" = "Generelt";
 "Get Help" = "Få hjælp";
-"Get RootHide Package" = "Hent RootHide-pakke";
+"Get roothide Package" = "Hent roothide-pakke";
 "Height" = "Højde";
 "Incomplete Installation" = "Ufuldstændig installation";
 "Incomplete Installations" = "Ufuldstændige installationer";
@@ -212,7 +212,7 @@
 "Resolution" = "Opløsning";
 "Resources" = "Ressourcer";
 "Resume" = "Fortsæt";
-"RootHide Package Required" = "RootHide-pakke påkrævet";
+"roothide Package Required" = "roothide-pakke påkrævet";
 "Save" = "Gem";
 "Save a ZIP file containing logs and crash reports." = "Gem en ZIP-fil med logfiler og rapporter om nedbrud.";
 "Save Diagnostics to Files" = "Gem diagnosticering i Arkiver";
@@ -271,7 +271,7 @@
 "These options affect iPadOS only while Virtual Mac is frontmost and a Virtual Mac is running." = "Disse indstillinger påvirker kun iPadOS, når Virtuel Mac er i forgrunden, og en virtuel Mac kører.";
 "This iPad is incompatible with Virtual Mac" = "Denne iPad er ikke kompatibel med Virtual Mac";
 "This iPhone is incompatible with Virtual Mac" = "Denne iPhone er ikke kompatibel med Virtual Mac";
-"This is the standard Virtual Mac package running on a RootHide jailbreak. Install the official RootHide package for private storage and full compatibility." = "Dette er standardpakken til Virtual Mac, der kører på en RootHide-jailbreak. Installer den officielle RootHide-pakke for privat lagring og fuld kompatibilitet.";
+"This is the standard Virtual Mac package running on a Dopamine-roothide jailbreak. Install the official roothide package for private storage and full compatibility." = "Dette er standardpakken til Virtual Mac, der kører på en Dopamine-roothide-jailbreak. Installer den officielle roothide-pakke for privat lagring og fuld kompatibilitet.";
 "This restores all Virtual Mac settings to their defaults. Virtual Macs, restore images, and installation files won’t be removed." = "Dette nulstiller alle indstillinger i Virtual Mac til standardværdierne. Virtual Macs, gendannelsesbilleder og installationsfiler fjernes ikke.";
 "this Virtual Mac" = "denne Virtual Mac";
 "To enable OpenGL acceleration, shut down this Virtual Mac, then in its options, enable OpenGL Acceleration." = "Sluk denne Virtual Mac, og slå derefter OpenGL-acceleration til i indstillingerne for at aktivere den.";

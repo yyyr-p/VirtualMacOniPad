@@ -120,7 +120,7 @@
 "Full Screen Mirroring" = "पूर्ण स्क्रीन मिररिंग";
 "General" = "सामान्य";
 "Get Help" = "सहायता पाएँ";
-"Get RootHide Package" = "RootHide पैकेज प्राप्त करें";
+"Get roothide Package" = "roothide पैकेज प्राप्त करें";
 "Height" = "ऊँचाई";
 "Incomplete Installation" = "अधूरा इंस्टॉलेशन";
 "Incomplete Installations" = "अधूरे इंस्टॉलेशन";
@@ -212,7 +212,7 @@
 "Resolution" = "रिज़ॉल्यूशन";
 "Resources" = "संसाधन";
 "Resume" = "फिर शुरू करें";
-"RootHide Package Required" = "RootHide पैकेज आवश्यक";
+"roothide Package Required" = "roothide पैकेज आवश्यक";
 "Save" = "सहेजें";
 "Save a ZIP file containing logs and crash reports." = "लॉग और क्रैश रिपोर्ट वाली ZIP फ़ाइल सहेजें।";
 "Save Diagnostics to Files" = "डायग्नोस्टिक्स को Files में सेव करें";
@@ -271,7 +271,7 @@
 "These options affect iPadOS only while Virtual Mac is frontmost and a Virtual Mac is running." = "ये विकल्प iPadOS को केवल तब प्रभावित करते हैं, जब वर्चुअल Mac सामने हो और कोई वर्चुअल Mac चल रहा हो।";
 "This iPad is incompatible with Virtual Mac" = "यह iPad Virtual Mac के साथ संगत नहीं है";
 "This iPhone is incompatible with Virtual Mac" = "यह iPhone Virtual Mac के साथ संगत नहीं है";
-"This is the standard Virtual Mac package running on a RootHide jailbreak. Install the official RootHide package for private storage and full compatibility." = "यह RootHide जेलब्रेक पर चल रहा मानक Virtual Mac पैकेज है। निजी स्टोरेज और पूर्ण संगतता के लिए आधिकारिक RootHide पैकेज इंस्टॉल करें।";
+"This is the standard Virtual Mac package running on a Dopamine-roothide jailbreak. Install the official roothide package for private storage and full compatibility." = "यह Dopamine-roothide जेलब्रेक पर चल रहा मानक Virtual Mac पैकेज है। निजी स्टोरेज और पूर्ण संगतता के लिए आधिकारिक roothide पैकेज इंस्टॉल करें।";
 "This restores all Virtual Mac settings to their defaults. Virtual Macs, restore images, and installation files won’t be removed." = "यह वर्चुअल Mac की सभी सेटिंग्स को उनके डिफ़ॉल्ट पर रीसेट करता है। वर्चुअल Mac, रीस्टोर इमेज और इंस्टॉलेशन फ़ाइलें नहीं हटाई जाएँगी।";
 "this Virtual Mac" = "यह वर्चुअल Mac";
 "To enable OpenGL acceleration, shut down this Virtual Mac, then in its options, enable OpenGL Acceleration." = "OpenGL एक्सेलेरेशन चालू करने के लिए इस Virtual Mac को बंद करें, फिर इसके विकल्पों में OpenGL एक्सेलेरेशन चालू करें।";

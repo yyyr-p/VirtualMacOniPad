@@ -120,7 +120,7 @@
 "Full Screen Mirroring" = "Oglindire pe Tot Ecranul";
 "General" = "Generali";
 "Get Help" = "Obțineți ajutor";
-"Get RootHide Package" = "Obține pachetul RootHide";
+"Get roothide Package" = "Obține pachetul roothide";
 "Height" = "Înălțime";
 "Incomplete Installation" = "Instalare incompleta";
 "Incomplete Installations" = "Installazioni incomplete";
@@ -212,7 +212,7 @@
 "Resolution" = "Rezoluție";
 "Resources" = "Resurse";
 "Resume" = "Reluați";
-"RootHide Package Required" = "Pachet RootHide necesar";
+"roothide Package Required" = "Pachet roothide necesar";
 "Save" = "Salvează";
 "Save a ZIP file containing logs and crash reports." = "Salvați un fișier ZIP care conține jurnale și rapoarte de blocare.";
 "Save Diagnostics to Files" = "Salvați diagnosticele în Fișiere";
@@ -271,7 +271,7 @@
 "These options affect iPadOS only while Virtual Mac is frontmost and a Virtual Mac is running." = "Aceste opțiuni afectează iPadOS numai când Mac virtual este în prim-plan și rulează un Mac virtual.";
 "This iPad is incompatible with Virtual Mac" = "Acest iPad nu este compatibil cu Virtual Mac";
 "This iPhone is incompatible with Virtual Mac" = "Acest iPhone nu este compatibil cu Virtual Mac";
-"This is the standard Virtual Mac package running on a RootHide jailbreak. Install the official RootHide package for private storage and full compatibility." = "Acesta este pachetul standard Virtual Mac care rulează pe un jailbreak RootHide. Instalați pachetul RootHide oficial pentru stocare privată și compatibilitate completă.";
+"This is the standard Virtual Mac package running on a Dopamine-roothide jailbreak. Install the official roothide package for private storage and full compatibility." = "Acesta este pachetul standard Virtual Mac care rulează pe un jailbreak Dopamine-roothide. Instalați pachetul roothide oficial pentru stocare privată și compatibilitate completă.";
 "This restores all Virtual Mac settings to their defaults. Virtual Macs, restore images, and installation files won’t be removed." = "Aceasta restabilește toate configurările Virtual Mac la valorile implicite. Mac-urile virtuale, imaginile de restaurare și fișierele de instalare nu vor fi eliminate.";
 "this Virtual Mac" = "acest Mac virtual";
 "To enable OpenGL acceleration, shut down this Virtual Mac, then in its options, enable OpenGL Acceleration." = "Pentru a activa accelerarea OpenGL, opriți acest Virtual Mac, apoi activați-o în opțiunile sale.";

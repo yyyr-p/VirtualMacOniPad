@@ -120,7 +120,7 @@
 "Full Screen Mirroring" = "Volledige Schermspiegeling";
 "General" = "Algemeen";
 "Get Help" = "Hulp";
-"Get RootHide Package" = "RootHide-pakket ophalen";
+"Get roothide Package" = "roothide-pakket ophalen";
 "Height" = "Hoogte";
 "Incomplete Installation" = "Onvoltooide installatie";
 "Incomplete Installations" = "Onvoltooide installaties";
@@ -212,7 +212,7 @@
 "Resolution" = "Resolutie";
 "Resources" = "Resources";
 "Resume" = "Hervat";
-"RootHide Package Required" = "RootHide-pakket vereist";
+"roothide Package Required" = "roothide-pakket vereist";
 "Save" = "Bewaar";
 "Save a ZIP file containing logs and crash reports." = "Bewaar een ZIP-bestand met logbestanden en crashrapporten.";
 "Save Diagnostics to Files" = "Diagnostische gegevens bewaren in Bestanden";
@@ -271,7 +271,7 @@
 "These options affect iPadOS only while Virtual Mac is frontmost and a Virtual Mac is running." = "Deze opties zijn alleen van invloed op iPadOS wanneer Virtuele Mac op de voorgrond staat en er een virtuele Mac actief is.";
 "This iPad is incompatible with Virtual Mac" = "Deze iPad is niet compatibel met Virtual Mac";
 "This iPhone is incompatible with Virtual Mac" = "Deze iPhone is niet compatibel met Virtual Mac";
-"This is the standard Virtual Mac package running on a RootHide jailbreak. Install the official RootHide package for private storage and full compatibility." = "Dit is het standaard Virtual Mac-pakket dat draait op een RootHide-jailbreak. Installeer het officiële RootHide-pakket voor privéopslag en volledige compatibiliteit.";
+"This is the standard Virtual Mac package running on a Dopamine-roothide jailbreak. Install the official roothide package for private storage and full compatibility." = "Dit is het standaard Virtual Mac-pakket dat draait op een Dopamine-roothide-jailbreak. Installeer het officiële roothide-pakket voor privéopslag en volledige compatibiliteit.";
 "This restores all Virtual Mac settings to their defaults. Virtual Macs, restore images, and installation files won’t be removed." = "Hiermee worden alle instellingen van Virtual Mac teruggezet naar de standaardwaarden. Virtual Macs, herstelimages en installatiebestanden worden niet verwijderd.";
 "this Virtual Mac" = "deze Virtual Mac";
 "To enable OpenGL acceleration, shut down this Virtual Mac, then in its options, enable OpenGL Acceleration." = "Om OpenGL-versnelling in te schakelen, zet je deze Virtual Mac uit en schakel je de functie in bij de opties.";

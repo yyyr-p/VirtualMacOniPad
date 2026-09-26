@@ -120,7 +120,7 @@
 "Full Screen Mirroring" = "Pencerminan Layar Penuh";
 "General" = "Umum";
 "Get Help" = "Dapatkan Bantuan";
-"Get RootHide Package" = "Dapatkan paket RootHide";
+"Get roothide Package" = "Dapatkan paket roothide";
 "Height" = "Tinggi";
 "Incomplete Installation" = "Instalasi Belum Selesai";
 "Incomplete Installations" = "Instalasi yang Belum Selesai";
@@ -212,7 +212,7 @@
 "Resolution" = "Resolusi";
 "Resources" = "Sumber Daya";
 "Resume" = "Lanjutkan";
-"RootHide Package Required" = "Paket RootHide diperlukan";
+"roothide Package Required" = "Paket roothide diperlukan";
 "Save" = "Simpan";
 "Save a ZIP file containing logs and crash reports." = "Simpan file ZIP yang berisi log dan laporan crash.";
 "Save Diagnostics to Files" = "Simpan Diagnostik ke File";
@@ -271,7 +271,7 @@
 "These options affect iPadOS only while Virtual Mac is frontmost and a Virtual Mac is running." = "Pilihan ini hanya memengaruhi iPadOS saat Mac Virtual berada di depan dan Mac virtual sedang berjalan.";
 "This iPad is incompatible with Virtual Mac" = "iPad ini tidak kompatibel dengan Virtual Mac";
 "This iPhone is incompatible with Virtual Mac" = "iPhone ini tidak kompatibel dengan Virtual Mac";
-"This is the standard Virtual Mac package running on a RootHide jailbreak. Install the official RootHide package for private storage and full compatibility." = "Ini adalah paket Virtual Mac standar yang berjalan di jailbreak RootHide. Pasang paket RootHide resmi untuk penyimpanan pribadi dan kompatibilitas penuh.";
+"This is the standard Virtual Mac package running on a Dopamine-roothide jailbreak. Install the official roothide package for private storage and full compatibility." = "Ini adalah paket Virtual Mac standar yang berjalan di jailbreak Dopamine-roothide. Pasang paket roothide resmi untuk penyimpanan pribadi dan kompatibilitas penuh.";
 "This restores all Virtual Mac settings to their defaults. Virtual Macs, restore images, and installation files won’t be removed." = "Ini mengembalikan semua pengaturan Virtual Mac ke nilai default. Virtual Mac, citra pemulihan, dan file instalasi tidak akan dihapus.";
 "this Virtual Mac" = "Virtual Mac ini";
 "To enable OpenGL acceleration, shut down this Virtual Mac, then in its options, enable OpenGL Acceleration." = "Untuk menyalakan akselerasi OpenGL, matikan Virtual Mac ini, lalu nyalakan Akselerasi OpenGL di pilihannya.";
