@@ -13,48 +13,115 @@ if [[ "${1:-}" == --development ]]; then
     shift
 fi
 [[ $# == 0 ]] || die "usage: build-roothide-deb.sh [--development]"
-DEB="${VZ_BASE_DEB:-${VZ_RELEASE_DEB:-$VZ_BUILD_ROOT/downloads/VirtualMac_1.2.3.deb}}"
-SHA256=435ce1dc76b9e18b1547c77b84e2cf33ffe40a16be63e366f181d14709a41aa0
-need_file "$DEB"
-actual="$(shasum -a 256 "$DEB" | awk '{print $1}')"
-if [[ -z "${VZ_BASE_DEB:-}" ]]; then
-    [[ "$actual" == "$SHA256" ]] || die "official runtime package checksum mismatch"
-fi
-[[ "$(dpkg-deb -f "$DEB" Package)" == com.mac.virtual ]] || die "unexpected base package"
-SHA256="$actual"
 SDK="$(xcrun --sdk iphoneos --show-sdk-path)"
 ROOTHIDE_SDK="${VZ_ROOTHIDE_SDK:-$VZ_BUILD_ROOT/toolchain/roothide-sdk/devkit}"
 OUT="$VZ_BUILD_ROOT/roothide"
 STAGE="$OUT/stage"
-CACHE="$OUT/base-$SHA256"
-if [[ ! -f "$CACHE/.source-sha256" ]] ||
-    [[ "$(cat "$CACHE/.source-sha256")" != "$SHA256" ]]; then
-    mkdir -p "$CACHE"
-    dpkg-deb -x "$DEB" "$CACHE"
-    printf '%s\n' "$SHA256" > "$CACHE/.source-sha256"
-fi
 rm -rf "$STAGE"
 mkdir -p "$STAGE/DEBIAN" "$STAGE/Applications" \
     "$STAGE/usr/libexec" "$STAGE/usr/bin" "$STAGE/Library/LaunchDaemons"
 RUNTIME="$STAGE/usr/libexec/VirtualMac"
 APP="$STAGE/Applications/VirtualMac.app"
-ditto "$CACHE/var/root/VirtualMac/payload" "$RUNTIME/payload"
-ditto "$CACHE/var/root/VirtualMac/install" "$RUNTIME/install"
-ditto "$CACHE/var/jb/Applications/VirtualMac.app" "$APP"
-ditto "$CACHE/var/jb/usr/lib" "$STAGE/usr/lib"
-ditto "$CACHE/var/jb/usr/libexec" "$STAGE/usr/libexec"
-ditto "$CACHE/var/jb/usr/sbin" "$STAGE/usr/sbin"
+
+# The default build assembles from freshly built component products (the same
+# Apple-extracted runtime the standard package builds from), so payload-internal
+# fixes flow in without reissuing a release deb. Set VZ_BASE_DEB to fall back to
+# the released deb for reproducible-from-snapshot builds; in that mode component
+# builds are skipped and the deb's extracted payload is reused.
+if [[ -n "${VZ_BASE_DEB:-}" ]]; then
+    DEB="$VZ_BASE_DEB"
+    need_file "$DEB"
+    actual="$(shasum -a 256 "$DEB" | awk '{print $1}')"
+    [[ "$(dpkg-deb -f "$DEB" Package)" == com.mac.virtual ]] || die "unexpected base package"
+    CACHE="$OUT/base-$actual"
+    if [[ ! -f "$CACHE/.source-sha256" ]] ||
+        [[ "$(cat "$CACHE/.source-sha256")" != "$actual" ]]; then
+        mkdir -p "$CACHE"
+        dpkg-deb -x "$DEB" "$CACHE"
+        printf '%s\n' "$actual" > "$CACHE/.source-sha256"
+    fi
+    ditto "$CACHE/var/root/VirtualMac/payload" "$RUNTIME/payload"
+    ditto "$CACHE/var/root/VirtualMac/install" "$RUNTIME/install"
+    ditto "$CACHE/var/jb/Applications/VirtualMac.app" "$APP"
+    ditto "$CACHE/var/jb/usr/lib" "$STAGE/usr/lib"
+    ditto "$CACHE/var/jb/usr/libexec" "$STAGE/usr/libexec"
+    ditto "$CACHE/var/jb/usr/sbin" "$STAGE/usr/sbin"
+    for plist in com.apple.NetworkSharing.plist com.apple.bootpd.plist; do
+        cp "$CACHE/var/jb/Library/LaunchDaemons/$plist" "$STAGE/Library/LaunchDaemons/"
+    done
+    mkdir -p "$STAGE/usr/lib/TweakInject"
+    ditto "$CACHE/var/root/VirtualMac/bootstrap-common/usr/lib/TweakInject" \
+        "$STAGE/usr/lib/TweakInject"
+    SOURCE_TAG="deb:$actual"
+else
+    if [[ "${VZ_SKIP_REBUILD:-0}" != 1 ]]; then
+        "$SCRIPT_DIR/build-ipad-vm.sh"
+        "$SCRIPT_DIR/build-ipad-network-helpers.sh"
+        "$SCRIPT_DIR/build-ipad-network-sharing.sh"
+        "$SCRIPT_DIR/build-ipad-installation.sh"
+        "$SCRIPT_DIR/build-ipad-app.sh"
+        "$SCRIPT_DIR/build-springboard-tweak.sh"
+    fi
+    "$SCRIPT_DIR/audit-ipados-compatibility.sh"
+    # Payload overlay order matters: the installation payload is staged first,
+    # then the VM payload overlays it so the shared framework tree is the
+    # authoritative VM-runtime copy (mirrors build-ipad-deb.sh).
+    ditto "$VZ_BUILD_ROOT/ipad-installation/payload" "$RUNTIME/payload"
+    ditto "$VZ_BUILD_ROOT/ipad-vm/payload" "$RUNTIME/payload"
+    ditto "$VZ_BUILD_ROOT/ipad-installation/install" "$RUNTIME/install"
+    ditto "$VZ_BUILD_ROOT/ipad-app/VirtualMac.app" "$APP"
+    install -m 755 "$VZ_BUILD_ROOT/ipad-app/virtualmac-diagnostics" \
+        "$STAGE/usr/bin/virtualmac-diagnostics"
+    # Component products retain dev-only probes that the standard deb strips;
+    # remove them so the roothide package matches the released layout.
+    rm -rf "$RUNTIME/payload/bin"
+    rm -f "$RUNTIME/payload/trustcache.txt" \
+        "$RUNTIME/install/restore-image-probe" \
+        "$RUNTIME/install/usb-bridge-probe"
+    install -m 755 "$VZ_BUILD_ROOT/ipad-network-sharing/InternetSharing" \
+        "$STAGE/usr/libexec/InternetSharing"
+    install -m 755 "$VZ_BUILD_ROOT/ipad-network-sharing/InternetSharing.ipados15" \
+        "$STAGE/usr/libexec/InternetSharing.ipados15"
+    install -m 755 "$VZ_BUILD_ROOT/ipad-network-sharing/InternetSharing.ipados16" \
+        "$STAGE/usr/libexec/InternetSharing.ipados16"
+    install -m 755 "$VZ_BUILD_ROOT/ipad-network-sharing/libmrc.dylib" \
+        "$STAGE/usr/lib/libmrc.dylib"
+    install -m 755 "$VZ_BUILD_ROOT/ipad-network-sharing/libmrc.ipados15-auth.dylib" \
+        "$STAGE/usr/lib/libmrc.ipados15-auth.dylib"
+    install -m 755 "$VZ_BUILD_ROOT/ipad-network-sharing/AuthorizationCompat.dylib" \
+        "$STAGE/usr/lib/AuthorizationCompat.dylib"
+    install -m 755 "$VZ_BUILD_ROOT/ipad-network-sharing/NetworkMemoryPolicy.dylib" \
+        "$STAGE/usr/lib/NetworkMemoryPolicy.dylib"
+    install -m 755 "$VZ_BUILD_ROOT/ipad-network-helpers/bootpd" \
+        "$STAGE/usr/libexec/bootpd"
+    install -m 755 "$VZ_BUILD_ROOT/ipad-network-helpers/rtadvd" \
+        "$STAGE/usr/sbin/rtadvd"
+    install -m 755 "$VZ_BUILD_ROOT/ipad-network-helpers/OpenDirectoryCompat.dylib" \
+        "$STAGE/usr/lib/OpenDirectoryCompat.dylib"
+    install -m 755 "$VZ_BUILD_ROOT/ipad-network-helpers/IOKit14Compat.dylib" \
+        "$STAGE/usr/lib/IOKit14Compat.dylib"
+    install -m 644 "$VZ_BUILD_ROOT/ipad-network-sharing/com.apple.NetworkSharing.plist" \
+        "$STAGE/Library/LaunchDaemons/com.apple.NetworkSharing.plist"
+    install -m 644 "$VZ_BUILD_ROOT/ipad-network-helpers/com.apple.bootpd.plist" \
+        "$STAGE/Library/LaunchDaemons/com.apple.bootpd.plist"
+    mkdir -p "$STAGE/usr/lib/TweakInject"
+    install -m 755 "$VZ_BUILD_ROOT/ipad-tweak/VZKeyboardPassthrough.dylib" \
+        "$STAGE/usr/lib/TweakInject/VZKeyboardPassthrough.dylib"
+    install -m 644 "$VZ_BUILD_ROOT/ipad-tweak/VZKeyboardPassthrough.plist" \
+        "$STAGE/usr/lib/TweakInject/VZKeyboardPassthrough.plist"
+    find "$STAGE" -type f \( -name .DS_Store -o -name '._*' \) -delete
+    xattr -cr "$STAGE"
+    SOURCE_TAG="component-build"
+fi
+
+# Select the iPadOS 16 variant as the default runtime/installation/network
+# binary; the on-device selector promotes the matching variant on boot. This
+# runs after both input branches have populated the stage.
 vmm="$RUNTIME/payload/VirtualMachine.xpc/Contents/MacOS/com.apple.Virtualization.VirtualMachine"
 cp "$vmm.ipados16" "$vmm"
 installer="$RUNTIME/payload/Installation.xpc/Contents/MacOS/com.apple.Virtualization.Installation"
 cp "$installer.ipados16" "$installer"
 cp "$STAGE/usr/libexec/InternetSharing.ipados16" "$STAGE/usr/libexec/InternetSharing"
-for plist in com.apple.NetworkSharing.plist com.apple.bootpd.plist; do
-    cp "$CACHE/var/jb/Library/LaunchDaemons/$plist" "$STAGE/Library/LaunchDaemons/"
-done
-mkdir -p "$STAGE/usr/lib/TweakInject"
-ditto "$CACHE/var/root/VirtualMac/bootstrap-common/usr/lib/TweakInject" \
-    "$STAGE/usr/lib/TweakInject"
 
 compile=(xcrun --sdk iphoneos clang -miphoneos-version-min=15.0
     -isysroot "$SDK" -DVZ_ROOTHIDE -I"$ROOTHIDE_SDK"
@@ -233,7 +300,7 @@ base_version=$(sed -n 's/^Version: //p' "$STAGE/DEBIAN/control")
 version="${VZ_PACKAGE_VERSION:-$base_version.$(git -C "$VZ_REPO_ROOT" rev-list --count HEAD).$(git -C "$VZ_REPO_ROOT" rev-parse --short=10 HEAD)}"
 sed -i '' "s/^Version:.*/Version: $version/" "$STAGE/DEBIAN/control"
 printf 'Installed-Size: %s\n' "$(du -sk "$STAGE" | awk '{print $1}')" >> "$STAGE/DEBIAN/control"
-printf 'base-sha256=%s\nsource-commit=%s\ndevelopment=%s\n' "$SHA256" "$(git -C "$VZ_REPO_ROOT" rev-parse HEAD)" "$DEVELOPMENT" > "$RUNTIME/build-source.txt"
+printf 'source=%s\nsource-commit=%s\ndevelopment=%s\n' "$SOURCE_TAG" "$(git -C "$VZ_REPO_ROOT" rev-parse HEAD)" "$DEVELOPMENT" > "$RUNTIME/build-source.txt"
 # Replace the base deb's checked-in localization files with the ones
 # from the source tree so new and updated UI strings ship in the package.
 ditto "$VZ_REPO_ROOT/resources/Localizations" "$APP/../Localizations-staging"
