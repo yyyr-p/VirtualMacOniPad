@@ -19,7 +19,8 @@ OUT="$VZ_BUILD_ROOT/roothide"
 STAGE="$OUT/stage"
 rm -rf "$STAGE"
 mkdir -p "$STAGE/DEBIAN" "$STAGE/Applications" \
-    "$STAGE/usr/libexec" "$STAGE/usr/bin" "$STAGE/Library/LaunchDaemons"
+    "$STAGE/usr/libexec" "$STAGE/usr/bin" "$STAGE/usr/lib" \
+    "$STAGE/usr/sbin" "$STAGE/Library/LaunchDaemons"
 RUNTIME="$STAGE/usr/libexec/VirtualMac"
 APP="$STAGE/Applications/VirtualMac.app"
 
